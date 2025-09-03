@@ -13,6 +13,10 @@ struct City {
     Coordinates location;
 };
 
+void PrintCity(City city) {
+   std::cout << city.name << ", " << city.state << " located at [" << city.location.x << ", " << city.location.y << "]";
+}
+
 
 int main() {
     // declare a nested struct variable
@@ -20,7 +24,7 @@ int main() {
     City capital({"Austin", "TX", coords});
     
     std::cout << "The state capital is in ";
-    std::cout << capital.name << ", " << capital.state << " located at (" << capital.location.x << ", " << capital.location.y << ")";
+    PrintCity(capital);
     std::cout << "." << std::endl;
 
  
@@ -28,6 +32,6 @@ int main() {
     City aggieland({"College Station", "TX", {30.601389, -96.314444}});
 
     std::cout << std::endl << "The best university is in ";
-    std::cout << aggieland.name << ", " << aggieland.state << " located at (" << aggieland.location.x << ", " << aggieland.location.y << ")";
+    PrintCity(aggieland);
     std::cout << ", WHOOP!" << std::endl;
 }
