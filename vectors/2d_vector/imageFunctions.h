@@ -17,11 +17,11 @@ bool loadImage(const std::string filename, std::vector<std::vector<Pixel> >& ima
 
 bool outputImage(const std::string filename, const std::vector<std::vector<Pixel> >& image);
 
-void grayscaleImage(std::vector<std::vector<Pixel> >& image, bool quiet = false);
+void grayscaleImage(std::vector<std::vector<Pixel> >& image);
 
 void sepiaImage(std::vector<std::vector<Pixel> >& image);
 
-void invertImage(std::vector<std::vector<Pixel> >& image, bool quiet = false);
+void invertImage(std::vector<std::vector<Pixel> >& image);
 
 void invertGrayscaleImage(std::vector<std::vector<Pixel> >& image);
 
