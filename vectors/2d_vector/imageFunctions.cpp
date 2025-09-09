@@ -188,9 +188,12 @@ void sepiaImage(vector<vector<Pixel> >& image)
 }
 
 
-/*  Function invertGrayscaleImage
+/*  Function invertImage
  *  image: 2d-vector of Pixels (structs)
  *  Return value: none, but image should be modified to be invert grayscale
+ *
+ *  Note: compute the inverted image by subtracting each pixel from 255
+ *        (the max color we allow is 255)
  */
 // You should write this function. //
 void invertImage(vector<vector<Pixel> >& image)
