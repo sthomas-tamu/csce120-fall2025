@@ -10,7 +10,6 @@ void printMenu()
     std::cout << "----------------------------------" << std::endl;
     std::cout << " 'G': Make grayscale image" << std::endl;
     std::cout << " 'S': Make sepia image" << std::endl;
-    std::cout << " 'I': Make invert grayscale image" << std::endl;
     std::cout << " 'N': Make invert image" << std::endl;
     std::cout << " 'Q': Quit" << std::endl;
     std::cout << "----------------------------------" << std::endl;
@@ -29,7 +28,6 @@ int main() {
         switch (toupper(menuChoice)) { // use toupper so user can input upper or lower case choices
             case 'G':
             case 'S':
-            case 'I':
             case 'N':
                 processImage(menuChoice, image);
                 break;

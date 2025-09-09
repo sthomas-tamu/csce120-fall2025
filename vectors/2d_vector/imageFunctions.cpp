@@ -41,10 +41,6 @@ void processImage(char choice, vector<vector<Pixel> >& image)
             sepiaImage(image);
             outputImageFilename = "sepia." + originalImageFilename;
             break;
-        case 'I':
-            invertGrayscaleImage(image);
-            outputImageFilename = "invert_grey." + originalImageFilename;
-            break;
         case 'N':
             invertImage(image);
             outputImageFilename = "invert." + originalImageFilename;
@@ -202,14 +198,3 @@ void invertImage(vector<vector<Pixel> >& image)
     cout << " ... TBD" << endl;
 }
 
-
-/*  Function invertGrayscaleImage
- *  image: 2d-vector of Pixels (structs)
- *  Return value: none, but image should be modified to be invert grayscale
- */
-// You should write this function. //
-void invertGrayscaleImage(vector<vector<Pixel> >& image)
-{
-  cout << "Making invert grayscale image... " << endl;
-  cout << " ... TBD" << endl;
-}

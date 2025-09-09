@@ -23,6 +23,4 @@ void sepiaImage(std::vector<std::vector<Pixel> >& image);
 
 void invertImage(std::vector<std::vector<Pixel> >& image);
 
-void invertGrayscaleImage(std::vector<std::vector<Pixel> >& image);
-
 #endif
