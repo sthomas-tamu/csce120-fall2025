@@ -11,7 +11,7 @@ int main() {
     }
 
     std::vector<int> numbers;
-    //fill vector with random numbers between 0 and 10
+    //fill vector with random numbers between 0 and 9
     for(unsigned int i=0; i<x; ++i) {
         numbers.push_back(rand() % 10);
     }

@@ -3,15 +3,15 @@
 
 void swap(std::vector<int> numbers, unsigned int i, unsigned int j) {
     int swap_value = numbers.at(j);
-    numbers.at(j) = numbers.at(j+1);
-    numbers.at(j+1) = swap_value;
+    numbers.at(j) = numbers.at(i);
+    numbers.at(i) = swap_value;
 }
 
 
 int main() {
     std::vector<int> numbers;
     for(int i=0; i<10; ++i) {
-        numbers.push_back(rand() % 20); //generate random numbers between 0 and 20
+        numbers.push_back(rand() % 20); //generate random numbers between 0 and 19
     }
 
     std::cout << "numbers =\t";
