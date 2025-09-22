@@ -37,4 +37,6 @@ int main() {
     }
 
     std::cout << "-- end of main --" << std::endl;
+
+    return 0;
 }
