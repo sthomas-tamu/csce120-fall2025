@@ -73,7 +73,7 @@ int getMin(const vector<int>& v) {
 
 unsigned int countVal(int val, const vector<int>& v) {
     unsigned int cnt = 0;
-    for (int i=0; i<v.size(); i++) {
+    for (unsigned int i=0; i<v.size(); i++) {
         if (v.at(i) == val) {
             cnt++;
         }
