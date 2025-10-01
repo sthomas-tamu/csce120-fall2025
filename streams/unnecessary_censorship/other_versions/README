@@ -1,0 +1,5 @@
+censor_debugging.cpp - adds in debugging couts (TODO #1)
+censor_noexceptions.cpp - adds in error checking for if the fstreams opened properly and geline does not fail (TODO #2)
+censor_someexceptions.cpp - puts error checking and recovery inside try/catch statements
+censor_allexceptions.cpp - same as censor_someexceptions.cpp but tells the origIn stream to throw an exception if the fail or bad bit is set
+
