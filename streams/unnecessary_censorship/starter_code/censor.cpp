@@ -58,7 +58,7 @@ int main() {
         istringstream censorWds(censorWords); // treat the list of censor words as an input stream
         string censorWd;
         while (censorWds >> censorWd) { // while there are censor words to process (failure checking built in, see earlier while loop comments)
-            string lowerLine = tolower(line); // make a temporary copy with the string convered to lower case to match against censor words
+            string lowerLine = tolower(lineOut); // make a temporary copy with the string convered to lower case to match against censor words
             size_t position = lowerLine.find(censorWd);
             while (position != string::npos) {
                 // TODO #1: print out the censor word you found and the position its position for debugging
