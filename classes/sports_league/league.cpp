@@ -1,30 +1,6 @@
-#include <iostream>
-#include <string>
 #include <vector>
 
-class Player {
-    std::string name;
-    unsigned int jerseyNumber;
-    std::string position;
-
-  public: 
-    // constructor
-    Player() {
-        name = "";
-        jerseyNumber = 0;
-        position = "";
-    }
-
-    // constructor that initializes the data members
-    Player(std::string _name, unsigned int _jerseyNumber, std::string _position)
-        : name(_name), jerseyNumber(_jerseyNumber), position(_position) {
-    }
-
-    // function that prints to any ostream, set to const to prevent side-effects
-    void print(std::ostream& _os) const {
-        _os << name << "\t" << jerseyNumber << "\t" << position;
-    }
-};
+#include "Player.h"
 
 int main() {
     // create a vector of players
@@ -39,6 +15,11 @@ int main() {
         players.at(i).print(std::cout);
         std::cout << std::endl;
     }
+
+    // TODO:
+    // create a team with these players
+    // print the team roster
+    // print the team record
 
     return 0;
 }
