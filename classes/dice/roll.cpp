@@ -15,8 +15,6 @@ void test_dice(unsigned int num_sides, unsigned int num_rolls) {
     std::cout << std::endl;
 }
 
-
-
 int main() {
     test_dice(6, 10);
 
