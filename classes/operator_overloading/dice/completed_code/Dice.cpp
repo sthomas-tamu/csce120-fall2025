@@ -25,7 +25,7 @@ bool Dice::operator==(const Dice& rhs) const {
 // myself != rhs
 bool Dice::operator!=(const Dice& rhs) const {
     //note that class member functions have access to data of rhs, even though private
-    return current_value !== rhs.current_value;
+    return current_value != rhs.current_value;
 
     //could also implement using existing == operator and "this" (pointer to myself)
     //return !(*this == rhs);
