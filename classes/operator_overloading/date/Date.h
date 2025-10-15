@@ -7,16 +7,17 @@ class Date {
     private:
         unsigned int month, day, year;
 
-    Date(int m, int d, int y) : month(m), day(d), year(y) {}
-    ~Date() {}
+    public:
+        Date(int m, int d, int y) : month(m), day(d), year(y) {}
+        ~Date() {}
 
-    void print() const {
-        std::cout << month << "/" << day << "/" << year;
-    }
+        void print() const {
+            std::cout << month << "/" << day << "/" << year;
+        }
 
-    //add comparison (==)
+        //add comparison (==)
 
-    // add rank (<)
+        // add rank (<)
 };
 
 #endif
