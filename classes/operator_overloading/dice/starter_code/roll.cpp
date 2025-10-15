@@ -12,6 +12,7 @@ int main() {
     printDice(d1, "\tDice 1");
     printDice(d2, "\tDice 2");
     std::cout << "\nd1 == d2: " << (d1 == d2) << std::endl;
+    std::cout << "d1 != d2: " << (d1 != d2) << std::endl;
    
     while(d1 == d2) { 
         d1.roll();
@@ -20,6 +21,7 @@ int main() {
         printDice(d1, "\tDice 1");
         printDice(d2, "\tDice 2");
         std::cout << "\nd1 == d2: " << (d1 == d2) << std::endl;
+        std::cout << "d1 != d2: " << (d1 != d2) << std::endl;
     }
  
     return 0;
