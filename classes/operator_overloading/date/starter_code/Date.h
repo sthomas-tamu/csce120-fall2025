@@ -15,9 +15,9 @@ class Date {
             std::cout << month << "/" << day << "/" << year;
         }
 
-        //add comparison (==)
+        //add comparison: myself == rhs and myself != rhs
 
-        // add rank (<)
+        //add ranking: myself < rhs and myself<= rhs
 };
 
 #endif
