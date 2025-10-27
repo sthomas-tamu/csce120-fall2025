@@ -12,6 +12,12 @@ int main() {
     }
     std::cout << std::endl;
 
+    std::cout << "printing again:";
+    for(unsigned int i=0; i<primes.size(); ++i) {
+        std::cout << " " << primes.at(i);
+    }
+    std::cout << std::endl;
+
     // increment elements, iterate by reference
     for(int& element : primes) {
         element += 1;
@@ -23,7 +29,7 @@ int main() {
     std::cout << std::endl;
 
     // try to revert, iterate by value
-    for(int element : primes) {
+    for(int& element : primes) {
         element -= 1;
     }
     std::cout << "The reverted primes array:";
@@ -31,6 +37,7 @@ int main() {
         std::cout << " " << element;
     }
     std::cout << std::endl;
+
 
     // create a zero-initialized array of the same size
     std::array<int, 5> primes_copy = {};
@@ -40,7 +47,7 @@ int main() {
     }
     std::cout << std::endl;    
 
-    /*
+    
     // copy the array
     primes_copy = primes;
     std::cout << "The updated primes_copy array:\t";
@@ -48,7 +55,7 @@ int main() {
         std::cout << " " << element;
     }
     std::cout << std::endl;    
-    */
+    
 
     return 0;
 }
