@@ -6,8 +6,8 @@ int main() {
     std::cout << "Rate our movie from 1-10" << std::endl << std::endl;
 
     // Create ratings array
-    int GROUP_SIZE = 5;
-    int ratings[5];
+    const int GROUP_SIZE = 5;
+    int ratings[GROUP_SIZE];
 
     // Collect ratings
     try {
