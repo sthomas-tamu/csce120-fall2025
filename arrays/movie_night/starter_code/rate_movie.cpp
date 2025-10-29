@@ -5,6 +5,10 @@ int main() {
     std::cout << "=== Movie Night Rating System ===" << std::endl;
     std::cout << "Rate our movie from 1-10" << std::endl << std::endl;
 
+    // TODO 2: Revise to handle any size group, not just 5, still using c-style arrays
+
+    // TODO Challenge: Revise to also report the name of the person who gave the highest and lowest rating
+
     // Create ratings array
     const int GROUP_SIZE = 5;
     int ratings[GROUP_SIZE];
@@ -35,6 +39,8 @@ int main() {
     }
     double average = static_cast<double>(sum) / GROUP_SIZE;
     
+    //TODO 1: compute and print highest and lowest rating
+
     // Display results
     std::cout << "\n=== Results ===" << std::endl;
     std::cout << "Average rating: " << average << std::endl;
