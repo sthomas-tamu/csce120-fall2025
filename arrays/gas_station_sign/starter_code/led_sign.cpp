@@ -137,12 +137,12 @@ void check_bulbs(char led_sign[][SIGN_WIDTH], unsigned int height, unsigned int 
 }
 
 void place_digit(char led_sign[][SIGN_WIDTH], unsigned int height, unsigned int width, unsigned int start_row, unsigned int start_col, unsigned int digit) {
-    //turn on bulbs to display digit, top right corner of digit is start_row, start_col
+    //turn on bulbs to display digit, top left corner of digit is start_row, start_col
     //TODO
 }
 
 void place_remainder(char led_sign[][SIGN_WIDTH], unsigned int height, unsigned int width, unsigned int start_row, unsigned int start_col) {
-    //turn on bulbs to display fractional 9/10 cent, top right corner is start_row, start_col
+    //turn on bulbs to display fractional 9/10 cent, top left corner is start_row, start_col
     //TODO
 }
 
