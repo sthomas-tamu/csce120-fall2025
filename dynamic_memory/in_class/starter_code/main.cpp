@@ -11,32 +11,8 @@ class MyClass {
         std::cout << "\tin MyClass default constructor" << std::endl;
     }
 
-    // copy constructor, required to make a deep copy of ptr instead of a shallow copy,
-    //   a new int on the heap is initialized to the same value as what source.ptr is pointing to
-    MyClass(const MyClass& source) {
-        std::cout << "\tin MyClass copy constructor" << std::endl;
-        if(source.ptr != nullptr) {
-            ptr = new int{*(source.ptr)};
-        }
-    }
-    
-    // destructor, releases memory on the heap created by the object
-    ~MyClass() {
-        std::cout << "\tin MyClass destructor" << std::endl;
-        if(ptr != nullptr) {
-            std::cout << "\t\tMyClass.ptr not null, releasing it's memory" << std::endl;
-            delete ptr;
-        }
-    }
-
-    // assignment operator, required to make a deep copy of ptr instead of a shallow copy
-    MyClass& operator=(const MyClass& source) {
-        std:: cout << "\tin MyClass assignment operator" << std::endl;
-        if(source.ptr != nullptr) {
-            ptr = new int{*(source.ptr)};
-        }
-        return *this; //return a reference to myself (this is a pointer to myself so need to dereference it before returning)
-    }
+    // TODO Rule of 3: need to implement the destructor, copy constructor, and copy assignment operator
+    //   to make sure memory is not leaked and copies are deep instead of shallow
 
     // increment the int ptr is pointing to
     void increment() { 
