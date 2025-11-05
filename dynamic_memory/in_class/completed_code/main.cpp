@@ -15,6 +15,8 @@ class MyClass {
     //   a new int on the heap is initialized to the same value as what source.ptr is pointing to
     MyClass(const MyClass& source) {
         std::cout << "\tin MyClass copy constructor" << std::endl;
+
+        // if source is pointing to something, allocate new memory and copy the value
         if(source.ptr != nullptr) {
             ptr = new int{*(source.ptr)};
         }
@@ -23,6 +25,8 @@ class MyClass {
     // destructor, releases memory on the heap created by the object
     ~MyClass() {
         std::cout << "\tin MyClass destructor" << std::endl;
+
+        // if source is pointing to something, release the memory
         if(ptr != nullptr) {
             std::cout << "\t\tMyClass.ptr not null, releasing it's memory" << std::endl;
             delete ptr;
@@ -32,9 +36,19 @@ class MyClass {
     // assignment operator, required to make a deep copy of ptr instead of a shallow copy
     MyClass& operator=(const MyClass& source) {
         std:: cout << "\tin MyClass assignment operator" << std::endl;
+
+        // if I'm already pointing to something, release my memory
+        //   this check is not needed in the copy constructor since it I can't already be pointing to something 
+        if(ptr != nullptr) {
+            delete ptr;
+            ptr = nullptr; // set dangling pointer to nullptr
+        } 
+
+        // if source is pointing to something, allocate new memory and copy the value
         if(source.ptr != nullptr) {
             ptr = new int{*(source.ptr)};
         }
+
         return *this; //return a reference to myself (this is a pointer to myself so need to dereference it before returning)
     }
 
