@@ -73,6 +73,7 @@ int main() {
     post.addLike(5);
     post.addLike(2);
     post.addLike(4);
+    post.addLike(2);
     std::cout << "My post:\n" << post << std::endl;
 
     // create another social media post, no one likes it yet
