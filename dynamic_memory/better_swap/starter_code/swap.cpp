@@ -70,6 +70,7 @@ std::ostream& operator<<(std::ostream& os, const List& list) {
 int main() {
     int* items = new int[3]{1, 2, 3};
     List list1(3, items);
+    delete[] items;
 
     List list2;
 
