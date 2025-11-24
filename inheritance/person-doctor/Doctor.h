@@ -14,4 +14,9 @@ class Doctor : public Person {
     void setSpecialty(std::string newSpecialty) { specialty = newSpecialty; }
 };
 
+std::ostream& operator<<(std::ostream& os, const Doctor& p) {
+    os << p.getName() << " (" << p.getAge() << ", " << p.getSpecialty() << ")";
+    return os;
+}
+
 #endif
