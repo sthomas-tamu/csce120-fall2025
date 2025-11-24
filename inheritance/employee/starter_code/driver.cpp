@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-int main (int argc, char * argv[]) {
+int main () {
     HourlyEmployee emp1("James", "Williams", 18.50);
     std::cout << "HourlyEmployee: ";
     emp1.print(std::cout);
