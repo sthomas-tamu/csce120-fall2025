@@ -2,29 +2,27 @@
 
 #include <iostream>
 
-using std::cout, std::endl;
-
 int main() {
    Person* p = new Person("George", 22);
-   cout << "p: " << *p << endl;
+   std::cout << "p: " << *p << std::endl;
 
    Doctor* d = new Doctor("Sam", 37, "surgeon");
-   cout << "d: " << *d << endl;
+   std::cout << "d: " << *d << std::endl;
    d->setAge(45);
-   cout << "updated age for d: " << *d << endl;
+   std::cout << "updated age for d: " << *d << std::endl;
 
-   cout << endl;
+   std::cout << std::endl;
  
    Person* w;
-   cout << "setting w = p" << endl;
+   std::cout << "setting w = p" << std::endl;
    w = p;
-   cout << "w: " << *w << endl;
+   std::cout << "w: " << *w << std::endl;
 
-   cout << endl;
+   std::cout << std::endl;
 
-   cout << "setting w = d" << endl;
+   std::cout << "setting w = d" << std::endl;
    w = d;
-   cout << "w: " << *w << endl;
+   std::cout << "w: " << *w << std::endl;
 
    delete p;
    delete d;
